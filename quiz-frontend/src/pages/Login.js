@@ -28,7 +28,7 @@ function Login() {
       const response = await authApi.login(formData);
       login(response.data.user, response.data.token);
 
-      toast.success("Login feito com sucesso!")
+      toast.success("Login feito com sucesso!") // Alerta de login realizado com sucesso
 
     } catch (err) {
 
